@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beautiful Calculator</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: linear-gradient(to right, #74ebd5, #acb6e5);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .calculator {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            padding: 20px;
+            width: 320px;
+        }
+
+        #number {
+            width: 100%;
+            height: 80px;
+            font-size: 32px;
+            text-align: right;
+            padding: 10px 20px;
+            border-radius: 12px;
+            border: none;
+            background: rgba(255, 255, 255, 0.3);
+            color: #000;
+            margin-bottom: 20px;
+        }
+
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+        }
+
+        button {
+            height: 60px;
+            font-size: 20px;
+            border: none;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.3);
+            color: #000;
+            cursor: pointer;
+            transition: background 0.2s ease, transform 0.1s ease;
+        }
+
+        button:hover {
+            background: rgba(255, 255, 255, 0.5);
+            transform: scale(1.05);
+        }
+
+        button:active {
+            transform: scale(0.97);
+        }
+
+        /* Special button colors */
+        button:nth-child(1) {
+            background: #ff7675;
+            color: white;
+        }
+
+        button:last-child {
+            background: #55efc4;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" readonly id="number" />
+
+        <div class="button-grid">
+            <button>AC</button>
+            <button>%</button>
+            <button>/</button>
+            <button>*</button>
+
+            <button>9</button>
+            <button>8</button>
+            <button>7</button>
+            <button>+</button>
+
+            <button>6</button>
+            <button>5</button>
+            <button>4</button>
+            <button>-</button>
+
+            <button>3</button>
+            <button>2</button>
+            <button>1</button>
+            <button style="background-color: #ff7675;">DEL</button>
+            
+            <button>00</button>
+            <button>0</button>
+            <button>.</button>
+            <button>=</button>
+        </div>
+    </div>
+
+    <script src="./calcu.js"></script>
+</body>
+
+</html>

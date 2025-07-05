@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Styled CRUD</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        div {
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"], select {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0 12px 0;
+            box-sizing: border-box;
+        }
+
+        input[type="button"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        input[type="button"]:hover {
+            background-color: #45a049;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        button {
+            padding: 5px 10px;
+            margin: 0 2px;
+            background-color: #008CBA;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #007BB5;
+        }
+
+        button:nth-child(1) {
+            background-color: #f44336; /* red for delete */
+        }
+
+        button:nth-child(1):hover {
+            background-color: #da190b;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2 style="text-align: center;">FILL YOUR DETAILS</h2>
+        <div>
+            <form onsubmit="return false;">
+                <label for="form1">Firstname</label><br>
+                <input type="text" placeholder="Firstname" id="form1"><br>
+                <label for="form2">Lastname</label><br>
+                <input type="text" placeholder="Lastname" id="form2"><br>
+                <label for="form3">Age</label><br>
+                <input type="text" placeholder="Age" id="form3"><br>
+                <label for="form4">Gender</label><br>
+                <select name="gender" id="form4">
+                    <option value="" disabled >Select One</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br>
+                <input type="button" id="form5" value="Submit" onclick="myfunction()">
+            </form>
+        </div>
+        <div style="margin-top: 12px;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fullname</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    <!-- Rows injected by JS -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./curd.js"></script>
+</body>
+</html>

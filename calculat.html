@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3D Calculator</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #dbe6f6, #c5796d);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+
+    .calculator {
+      background: #f5f5f5;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+      width: 340px;
+    }
+
+    #display {
+      width: 100%;
+      height: 70px;
+      font-size: 30px;
+      border: none;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      padding: 10px 15px;
+      text-align: right;
+      box-shadow: inset 2px 2px 6px #ccc, inset -2px -2px 6px #fff;
+      background: #e0e0e0;
+      color: #333;
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+
+    button {
+      width: 70px;
+      height: 60px;
+      font-size: 20px;
+      border-radius: 12px;
+      border: none;
+      background: #e0e0e0;
+      box-shadow: 4px 4px 8px #aaa, -4px -4px 8px #fff;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    button:hover {
+      background: #d1d1d1;
+    }
+
+    button:active {
+      box-shadow: inset 2px 2px 4px #aaa, inset -2px -2px 4px #fff;
+      transform: scale(0.97);
+    }
+
+    /* Special buttons */
+    button:nth-child(1) {
+      background: #ff7675;
+      color: white;
+    }
+
+    button:last-child {
+      background: #55efc4;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" readonly id="display" />
+
+    <div class="button-row">
+      <button>AC</button>
+      <button>%</button>
+      <button>/</button>
+      <button>*</button>
+    </div>
+    <div class="button-row">
+      <button>9</button>
+      <button>8</button>
+      <button>7</button>
+      <button>-</button>
+    </div>
+    <div class="button-row">
+      <button>6</button>
+      <button>5</button>
+      <button>4</button>
+      <button>+</button>
+    </div>
+    <div class="button-row">
+      <button>3</button>
+      <button>2</button>
+      <button>1</button>
+      <button>DEL</button>
+    </div>
+    <div class="button-row">
+      <button>00</button>
+      <button>0</button>
+      <button>.</button>
+      <button>=</button>
+    </div>
+  </div>
+
+  <script src="calculat.js"></script>
+</body>
+</html>

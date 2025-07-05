@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Unit Calculator</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .card {
+      background-color: #ffffff;
+      padding: 30px 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    h3 {
+      color: #2c3e50;
+      margin-bottom: 25px;
+      font-size: 24px;
+    }
+
+    label {
+      font-weight: 600;
+      color: #555;
+      display: block;
+      margin-bottom: 6px;
+      text-align: left;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px 15px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      transition: 0.3s ease;
+    }
+
+    input[type="text"]:focus {
+      outline: none;
+      border-color: #5dade2;
+      box-shadow: 0 0 8px rgba(93, 173, 226, 0.5);
+    }
+
+    .equals {
+      font-size: 28px;
+      color: #444;
+      margin: 20px 0;
+      display: inline-block;
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 25px 20px;
+      }
+      h3 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h3>UNIT CALCULATOR</h3>
+
+    <label for="feet">Feet</label>
+    <input type="text" id="feet" value="1" />
+
+    <div class="equals">=</div>
+
+    <label for="inch">Inches</label>
+    <input type="text" id="inch" value="12" />
+  </div>
+
+  <script src="./unit.js"></script>
+</body>
+</html>

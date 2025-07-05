@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="flex  justify-center items-center bg-gradient-to-r flex-col  from-blue-500 to-cyan-300">
+        <div class="flex   items-center px-10 py-5 shadow-lg bg-gradient-to-r flex-col  from-blue-500 to-cyan-300 mt-10 rounded-md">
+            <div class="my-5">
+                <div class="w-full flex gap-5">
+                    <input type="text" placeholder="Enter City Name" spellcheck="false"
+                        class=" rounded-2xl px-3 py-2 shadow-lg hover:scale-105 " id="sr-box">
+                    <button class="p-3 border border-gray-400 rounded-full shadow-lg bg-white hover:scale-105 " id="sr-icon"><img
+                            class="w-4 h-4" src="./img/search.png" alt=""></button>
+                </div>
+
+            </div>
+            <img class="w-20 h-20 my-4 flex justify-center items-center" src="./img/weather.png" alt="rain-icon">
+            <h1 class="font-sans text-2xl font-semibold text-white">22°C</h1>
+            <h2 class="font-sans text-2xl font-semibold text-white">New York</h2>
+            <div class="flex justify-between w-full mt-10">
+                <div class="flex gap-3 items-center">
+                    <img class="w-10 h-10" src="./img/humidity.png" alt="wind">
+                    <div>
+                        <p class="font-sans  text-lg font-semibold text-white">50%</p>
+                        <p class="font-sans  text-sm font-semibold text-white">humidity</p>
+                    </div>
+                </div>
+                <div class="flex gap-3 items-center">
+                    <img class="w-10 h-10" src="./img/wind.png" alt="wind">
+                    <div>
+                        <p class="font-sans text-lg font-semibold text-white">15 km/h</p>
+                        <p class="font-sans text-sm font-semibold text-white">wind</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3D Calculator</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .calculator {
+      background: #1e1e1e;
+      padding: 30px;
+      border-radius: 25px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #display {
+      width: 260px;
+      height: 60px;
+      font-size: 28px;
+      border: none;
+      border-radius: 12px;
+      padding: 10px;
+      margin-bottom: 20px;
+      text-align: right;
+      background-color: #f1f1f1;
+      box-shadow: inset -4px -4px 10px #ffffffa5,
+                  inset 4px 4px 10px #00000050;
+    }
+
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 65px);
+      gap: 15px;
+    }
+
+    button {
+      height: 65px;
+      border: none;
+      border-radius: 12px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      background: linear-gradient(to bottom, #e0e0e0, #bababa);
+      box-shadow: 4px 4px 8px #00000066,
+                  -4px -4px 8px #ffffff44;
+      transition: all 0.1s ease-in-out;
+    }
+
+    button:active {
+      box-shadow: inset 2px 2px 6px #00000066,
+                  inset -2px -2px 6px #ffffff44;
+      transform: scale(0.96);
+    }
+
+    /* Special buttons */
+    button:nth-child(1) {
+      background: linear-gradient(to bottom, #ff5f6d, #ffc371);
+      color: white;
+    }
+
+    button:nth-child(4),
+    button:nth-child(8),
+    button:nth-child(12),
+    button:nth-child(16),
+    button:nth-child(20) {
+      background: linear-gradient(to bottom, #42e695, #3bb2b8);
+      color: white;
+    }
+
+    button:nth-child(19) {
+      background: linear-gradient(to bottom, #ff9966, #ff5e62);
+      color: white;
+    }
+
+    button:nth-child(17) {
+      background: linear-gradient(to bottom, #f2709c, #ff9472);
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="calculator">
+    <h6 style="color: #3bb2b8;">ABHINAW</h6>
+    <input type="text" readonly id="display" />
+
+    <div class="button-grid">
+      <button>AC</button>
+      <button>%</button>
+      <button>/</button>
+      <button>*</button>
+
+      <button>9</button>
+      <button>8</button>
+      <button>7</button>
+      <button>-</button>
+
+      <button>6</button>
+      <button>5</button>
+      <button>4</button>
+      <button>+</button>
+
+      <button>3</button>
+      <button>2</button>
+      <button>1</button>
+      <button>DEL</button>
+
+      <button>00</button>
+      <button>0</button>
+      <button>.</button>
+      <button>=</button>
+    </div>
+  </div>
+
+  <script src="calculator1.js"></script>
+</body>
+</html>

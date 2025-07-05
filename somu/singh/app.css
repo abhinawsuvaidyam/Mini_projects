@@ -1,0 +1,102 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vh;
+    background-color: aqua;
+    border: 1px solid transparent;
+    border-radius: 18px;
+}
+
+.game {
+    margin-bottom: 20px;
+}
+
+#new {
+    border: 1px solid transparent;
+    border-radius: 12px;
+    padding: 4px;
+    background-color: rgb(186, 163, 208);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     box-shadow: 0px 1px 1px 1px ;
+      width: 120px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#new:active {
+    transform: scale(95%);
+}
+
+#reset {
+    border: 1px solid transparent;
+    border-radius: 12px;
+    padding: 4px;
+    background-color: rgb(235, 27, 104);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+    margin-bottom: 25px;
+    width: 100px;
+    text-align: center;
+    box-shadow: 0px 1px 1px 1px ;
+}
+
+#reset:active {
+    transform: scale(95%);
+}
+
+.game-main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 4px;
+
+}
+
+.cell {
+    width: 94px;
+    height: 94px;
+    background-color: yellow;
+    color: teal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 18px;
+     box-shadow: 0px 1px 1px 1px ;
+}
+
+#msg {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(248, 9, 49);
+
+}
+
+.game3 {
+    margin: 12px;
+}
+.name {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 10px;
+}

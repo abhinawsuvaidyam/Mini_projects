@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <div>
+            <form action="">
+                <label for="form1">Firstname</label><br>
+                <input type="text" id="form1" placeholder="Firstname"><br>
+                <label for="form2">lastname</label><br>
+                <input type="text" id="form2" placeholder="lastname"><br>
+                <label for="form3">age</label><br>
+                <input type="text" id="form3" placeholder="age"><br>
+                <label for="form4">gender</label><br>
+                <select name="gender" id="form4">
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="femlae">Female</option>
+                    <option value="other">Other</option>
+                </select><br>
+                <input type="button" id="form5" value="submit" onclick="myfunction()">
+            </form>
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>fullname</th>
+                        <th>age</th>
+                        <th>gender</th>
+                        <th>action</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                  
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./crud.js"></script>
+</body>
+
+</html>

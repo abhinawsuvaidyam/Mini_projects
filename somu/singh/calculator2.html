@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculator</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #c9d6ff, #e2e2e2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .calculator {
+      background-color: #1e1e1e;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    #display {
+      width: 100%;
+      padding: 15px;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 8px;
+      background-color: #333;
+      color: #fff;
+      text-align: right;
+    }
+
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 70px);
+      gap: 12px;
+      justify-content: center;
+    }
+
+    .button-grid button {
+      padding: 20px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #444;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .button-grid button:hover {
+      background-color: #666;
+    }
+
+    .button-grid button:active {
+      background-color: #888;
+    }
+
+    .button-grid button:nth-child(4n) {
+      background-color: #f57c00;
+    }
+
+    .button-grid button:nth-child(4n):hover {
+      background-color: #ff9800;
+    }
+
+    .button-grid button:last-child {
+      background-color: #388e3c;
+    }
+
+    .button-grid button:last-child:hover {
+      background-color: #4caf50;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" readonly id="display" />
+    <div class="button-grid">
+      <button>AC</button>
+      <button>%</button>
+      <button>/</button>
+      <button>*</button>
+      <button>9</button>
+      <button>8</button>
+      <button>7</button>
+      <button>-</button>
+      <button>6</button>
+      <button>5</button>
+      <button>4</button>
+      <button>+</button>
+      <button>3</button>
+      <button>2</button>
+      <button>1</button>
+      <button>DEL</button>
+      <button>00</button>
+      <button>0</button>
+      <button>.</button>
+      <button>=</button>
+    </div>
+  </div>
+
+  <script src="./calculator2.js"></script>
+</body>
+</html>

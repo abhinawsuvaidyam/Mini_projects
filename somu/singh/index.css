@@ -1,0 +1,64 @@
+  * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .main, .submain {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40vw;
+            background-color: black;
+        }
+
+        .submain2 {
+            display: flex;
+            justify-content: center;
+            width: 220px;
+            gap: 12px;
+            height: 140px;
+            background: linear-gradient(135deg, #a18cd1, #fbc2eb); 
+            border: 1px solid transparent;
+            border-radius: 18px;
+            box-shadow: 0 4px 15px rgba(107, 198, 255, 0.6); 
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 5px rgba(107, 122, 255, 0.5), 0 0 10px rgba(107, 220, 255, 0.4);
+            }
+            50% {
+                box-shadow: 0 0 20px rgba(107, 255, 181, 0.8), 0 0 30px rgba(139, 255, 107, 0.7);
+            }
+            100% {
+                box-shadow: 0 0 5px rgba(203, 255, 107, 0.5), 0 0 10px rgba(255, 176, 107, 0.4);
+            }
+        }
+
+        .hours {
+            font-size: 90px;
+            margin-top: -12px;
+        }
+
+        .minutes {
+            font-size: 50px;
+            margin-top: 14px;
+        }
+
+        .second {
+            font-size: 30px;
+            margin-left: 15px;
+        }
+
+        .period {
+            font-size: 30px;
+            margin-bottom: -40px;
+            margin-left: -35px;
+        }
+
+        .bindu {
+            font-size: 50px;
+            margin-top: 12px;
+        }

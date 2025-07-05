@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Styled Calculator</title>
+</head>
+<body style="margin: 0; font-family: Arial, sans-serif; background: linear-gradient(135deg, #0f2027, #2c5364); height: 100vh; display: flex; justify-content: center; align-items: center;">
+  <div style="background: #ffffff10; backdrop-filter: blur(10px); padding: 30px; border-radius: 20px; box-shadow: 0 0 15px #00000060; display: flex; flex-direction: column; align-items: center;">
+    <input
+      type="text"
+      id="display"
+      readonly
+      style="width: 260px; height: 60px; font-size: 24px; padding: 10px; margin-bottom: 20px; border-radius: 10px; border: none; background-color: #ffffffcc; color: #000; text-align: right;"
+    />
+    <div style="display: grid; grid-template-columns: repeat(4, 60px); gap: 10px;">
+      <button style="background: #ff5e57; color: white;">AC</button>
+      <button>%</button>
+      <button>/</button>
+      <button>*</button>
+
+      <button>9</button>
+      <button>8</button>
+      <button>7</button>
+      <button>-</button>
+
+      <button>6</button>
+      <button>5</button>
+      <button>4</button>
+      <button>+</button>
+
+      <button>3</button>
+      <button>2</button>
+      <button>1</button>
+      <button style="background: #ffa502; color: white;">DEL</button>
+
+      <button>00</button>
+      <button>0</button>
+      <button>.</button>
+      <button style="background: #2ed573; color: white;">=</button>
+    </div>
+  </div>
+
+  <script src="./semicalculator.js"></script>
+</body>
+</html>
